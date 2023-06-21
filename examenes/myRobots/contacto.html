@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			crossorigin="anonymous"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+		<style>
+			body {
+				scroll-behavior: smooth;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		</style>
+
+		<title>myRobots | Contacto</title>
+	</head>
+	<body id="arriba" class="bg-dark text-white">
+		<header class="d-flex align-items-center flex-column">
+			<img alt="myRobots logo" class="object-fit-cover" src="assets/logo.png" width="150" height="75" />
+			<h2>myRobots</h2>
+			<nav class="d-flex gap-2 justify-content-center mt-2 w-100">
+				<a class="btn btn-secondary text-decoration-none" href="index.html" role="button">Inicio</a>
+				<a class="btn btn-secondary text-decoration-none" href="inventos.html" role="button">Inventos</a>
+				<a class="btn btn-secondary text-decoration-none" href="#" role="button">Contacto</a>
+			</nav>
+		</header>
+		<main class="d-flex flex-column align-items-center mt-4 mx-5">
+			<form action="enviado.html" class="d-flex flex-column justify-content-center gap-2" method="GET">
+				<div class="text-center">
+					<label for="nombreApellidos" class="form-label">Nombre y Apellidos</label>
+					<input class="form-control" id="nombreApellidos" />
+				</div>
+				<div class="text-center">
+					<label for="correoElectronico" class="form-label">Correo electrónico</label>
+					<input type="email" class="form-control" id="correoElectronico" />
+				</div>
+				<div class="text-center">
+					<label for="asunto" class="form-label">Asunto</label>
+					<input class="form-control" id="asunto" />
+				</div>
+				<div class="text-center">
+					<label for="consulta" class="form-label">Consulta</label>
+					<textarea class="form-control" id="consulta"> </textarea>
+				</div>
+				<button type="submit" class="btn btn-primary text-center">Submit</button>
+			</form>
+		</main>
+		<footer class="mt-2 text-center mb-2">
+			<hr class="mx-5 border-2" />
+			<a class="fa fa-envelope fa-3x text-white text-decoration-none" href="mailto:myRobots@example.com"></a>
+			<a class="fa-brands fa-facebook fa-3x text-white text-decoration-none" href="#"></a>
+			<a class="fa-brands fa-instagram fa-3x text-white text-decoration-none" href="#" target="_blank"></a>
+			<a class="fa-brands fa-whatsapp fa-3x text-white text-decoration-none" href="#"> </a>
+			<a class="fa-brands fa-tiktok fa-3x text-white text-decoration-none" href="#"></a>
+			<br />
+			<a
+				class="fa-solid fa-arrow-up btn btn-secondary mt-4 px-4 py-2 text-decoration-none text-center"
+				href="#arriba"
+			></a>
+		</footer>
+	</body>
+</html>
