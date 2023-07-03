@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<style type="text/tailwindcss">
+			@layer base {
+				input[type="number"]::-webkit-outer-spin-button,
+				input[type="number"]::-webkit-inner-spin-button,
+				input[type="number"] {
+					appearance: none;
+					-moz-appearance: textfield !important;
+					-webkit-appearance: none;
+				}
+			}
+			@layer components {
+				.link-button {
+					@apply hover:text-pink flex items-center justify-center rounded-lg p-2 text-sm font-bold no-underline transition-colors dark:bg-gray-600 md:text-base;
+				}
+			}
+		</style>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			/** @type {import('tailwindcss').Config} */
+			tailwind.config = {
+				content: ["./**/*.{html,js}"],
+				theme: {
+					extend: {
+						colors: {
+							pink: "#e4717a",
+						},
+					},
+				},
+			}
+		</script>
+		<script defer src="script.js"></script>
+
+		<title>Funciones con Presentacion</title>
+	</head>
+	<body class="bg-slate-700 text-white">
+		<main class="flex h-screen w-full flex-col items-center justify-center gap-1">
+			<h1 class="mb-6 text-4xl font-semibold">Funciones con Presentacion</h1>
+			<label for="altura">Altura (cm)</label>
+			<input class="text-slate-400" id="altura" name="altura" placeholder="180" type="number" />
+			<label for="edad">Edad</label>
+			<input class="text-slate-400" id="edad" name="edad" placeholder="21" type="number" />
+			<button class="link-button mt-2 text-white" type="submit">Calcular Peso Ideal</button>
+
+			<h3 class="font-semi mt-4 text-xl"></h3>
+		</main>
+	</body>
+</html>
