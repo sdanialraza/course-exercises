@@ -4,23 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<style type="text/tailwindcss">
-			@layer base {
-				input[type="number"]::-webkit-outer-spin-button,
-				input[type="number"]::-webkit-inner-spin-button,
-				input[type="number"] {
-					appearance: none;
-					-moz-appearance: textfield !important;
-					-webkit-appearance: none;
-				}
-			}
-			@layer components {
-				.link-button {
-					@apply hover:text-pink flex items-center justify-center rounded-lg p-2 text-sm font-bold no-underline transition-colors dark:bg-gray-600 md:text-base;
-				}
-			}
-		</style>
-
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script>
 			/** @type {import('tailwindcss').Config} */
