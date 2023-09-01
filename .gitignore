@@ -5,3 +5,6 @@ pnpm-lock.yaml
 
 # java ide
 .idea
+
+# compiled java
+out
