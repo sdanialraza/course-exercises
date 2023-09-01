@@ -1,3 +1,7 @@
+# javascript dependencies
 node_modules
 package.json
 pnpm-lock.yaml
+
+# java ide
+.idea
