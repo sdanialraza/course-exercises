@@ -10,6 +10,8 @@ public class Operaciones {
         System.out.println("Introduce el segundo numero");
         int segundoNumero = scanner.nextInt();
 
+        scanner.nextLine();
+
         System.out.println("Introduce el signo (+,-,*,/)");
         String signo = scanner.nextLine();
 
