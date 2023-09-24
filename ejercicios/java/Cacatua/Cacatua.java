@@ -10,8 +10,7 @@ public class Cacatua {
         while (!comida.equalsIgnoreCase("Cacahuetes")) {
             System.out.println("Cacatua cacahuete!");
             comida = scanner.nextLine();
-            if (comida.equalsIgnoreCase("cacahuetes"))
-                System.out.println(dormirse());
+            if (comida.equalsIgnoreCase("cacahuetes")) System.out.println(dormirse());
         }
     }
 

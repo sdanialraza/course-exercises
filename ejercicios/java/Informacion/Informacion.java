@@ -18,6 +18,7 @@ public class Informacion {
         String resultado = printInfo(nombre, edad, residencia);
         System.out.println(resultado);
     }
+
     public static String printInfo(String nombre, int edad, String residencia) {
         return "%s tiene %d y vive en %s".formatted(nombre, edad, residencia);
     }

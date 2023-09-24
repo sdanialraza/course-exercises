@@ -16,7 +16,7 @@ public class Animales {
             animales[5] = scanner.nextLine();
         }
 
-        for (String animal: animales)
+        for (String animal : animales)
             System.out.printf("%s\n", animal);
     }
 }

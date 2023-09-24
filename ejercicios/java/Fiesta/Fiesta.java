@@ -4,11 +4,7 @@ import java.util.Comparator;
 
 public class Fiesta {
     public static void main(String[] args) {
-        ArrayList<String> listaDeInvitados = new ArrayList<>(Arrays.asList(
-                "Albert", "Amelia", "Ava", "Carlos", "Charlotte",
-                "David", "Eva", "Isabel", "Javier", "Maria",
-                "Mia", "Olivia", "Pau", "Rosa", "Sofia"
-        ));
+        ArrayList<String> listaDeInvitados = new ArrayList<>(Arrays.asList("Albert", "Amelia", "Ava", "Carlos", "Charlotte", "David", "Eva", "Isabel", "Javier", "Maria", "Mia", "Olivia", "Pau", "Rosa", "Sofia"));
 
         System.out.println();
 
