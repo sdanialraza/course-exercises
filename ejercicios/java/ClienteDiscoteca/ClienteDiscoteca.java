@@ -23,10 +23,10 @@ public class ClienteDiscoteca {
     @Override
     public String toString() {
         return """
-               ClienteDiscoteca {
-                nombre='%s',
-                edad='%d'
-               };
-               """.formatted(nombre, edad);
+                ClienteDiscoteca {
+                 nombre='%s',
+                 edad='%d'
+                };
+                """.formatted(nombre, edad);
     }
 }

@@ -8,7 +8,7 @@ public class Contar {
         for (int i = NUMERO_INICIO; i <= NUMERO_FINAL; i++)
             numeros[i - NUMERO_INICIO] = i;
 
-        for (int numero: numeros)
+        for (int numero : numeros)
             System.out.printf("%d ", numero);
     }
 }

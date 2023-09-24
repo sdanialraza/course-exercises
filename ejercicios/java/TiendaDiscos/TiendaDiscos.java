@@ -30,15 +30,13 @@ public class TiendaDiscos {
             discos.add(new Disco(artista, titulo, ano, duracion));
         }
 
-        for (Disco disco: discos) {
-            System.out.printf(
-                    """
+        for (Disco disco : discos) {
+            System.out.printf("""
                     Artista: %s
                     Titulo: %s
                     Año: %d
                     Duracion: %d
-                    %n""",
-                    disco.getArtista(), disco.getTitulo(), disco.getAno(), disco.getDuracion());
+                    %n""", disco.getArtista(), disco.getTitulo(), disco.getAno(), disco.getDuracion());
         }
     }
 }

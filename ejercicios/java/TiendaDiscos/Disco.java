@@ -4,7 +4,9 @@ public class Disco {
     private String artista;
     private String titulo;
     private Integer ano;
-    /** Duracion en segundos */
+    /**
+     * Duracion en segundos
+     */
     private Integer duracion;
 
     public Disco(String artist, String titulo, Integer ano, Integer duracion) {

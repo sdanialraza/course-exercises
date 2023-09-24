@@ -19,9 +19,9 @@ public class Animales {
     @Override
     public String toString() {
         return """
-               Animales {
-                nombre: %s
-               }
-               """.formatted(nombre);
+                Animales {
+                 nombre: %s
+                }
+                """.formatted(nombre);
     }
 }

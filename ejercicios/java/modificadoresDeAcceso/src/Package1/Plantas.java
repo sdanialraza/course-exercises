@@ -30,10 +30,10 @@ public class Plantas {
     @Override
     public String toString() {
         return """
-               Plantas {
-                color: %s
-                precio: %.1f
-               }
-               """.formatted(color, precio);
+                Plantas {
+                 color: %s
+                 precio: %.1f
+                }
+                """.formatted(color, precio);
     }
 }

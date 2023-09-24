@@ -11,7 +11,7 @@ public class CalculacionIVA {
         int tipoDeIVA = scanner.nextInt();
 
         float precioFinal = calcularPrecioFinal(precioInicial, tipoDeIVA);
-        System.out.printf("Precio final: %.1f",  precioFinal);
+        System.out.printf("Precio final: %.1f", precioFinal);
     }
 
     public static float calcularPrecioFinal(float precioInicial, int tipoDeIVA) {

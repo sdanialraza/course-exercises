@@ -13,9 +13,6 @@ public class Paises {
             paises.add(scanner.nextLine());
         }
 
-        System.out.printf(
-                "Has estado en %s, %s, %s, %s, %s, y por ultimo, en %s",
-                paises.get(0), paises.get(1), paises.get(2), paises.get(3), paises.get(4), paises.get(5)
-        );
+        System.out.printf("Has estado en %s, %s, %s, %s, %s, y por ultimo, en %s", paises.get(0), paises.get(1), paises.get(2), paises.get(3), paises.get(4), paises.get(5));
     }
 }

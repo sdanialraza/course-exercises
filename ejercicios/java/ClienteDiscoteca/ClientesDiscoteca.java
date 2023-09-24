@@ -37,13 +37,11 @@ public class ClientesDiscoteca {
             }
         }
 
-        for (ClienteDiscoteca clienteDiscoteca1: clientesDiscoteca) {
-            System.out.printf(
-                    """
+        for (ClienteDiscoteca clienteDiscoteca1 : clientesDiscoteca) {
+            System.out.printf("""
                     Nombre: %s
                     Edad: %d
-                    """,
-                    clienteDiscoteca1.getNombre(), clienteDiscoteca1.getEdad());
+                    """, clienteDiscoteca1.getNombre(), clienteDiscoteca1.getEdad());
         }
     }
 }

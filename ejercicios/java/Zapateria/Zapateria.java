@@ -23,22 +23,20 @@ public class Zapateria {
         scanner.nextLine();
 
         for (int i = 0; i < cantidad; i++) {
-            System.out.println(
-                    """
-                            Que marca de zapatos quieres comprar?
-                            Casual
-                            - Vans
-                            - Steve Maddens
-                            Deporte
-                            - Adidas
-                            - Nike
-                            Elegante
-                            - Clarks
-                            - Hush Puppies
-                                                
-                            - Salir
-                            """
-            );
+            System.out.println("""
+                    Que marca de zapatos quieres comprar?
+                    Casual
+                    - Vans
+                    - Steve Maddens
+                    Deporte
+                    - Adidas
+                    - Nike
+                    Elegante
+                    - Clarks
+                    - Hush Puppies
+                                        
+                    - Salir
+                    """);
             String marca = scanner.nextLine();
 
             switch (marca) {
