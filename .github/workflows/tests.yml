@@ -19,9 +19,9 @@ jobs:
         with:
           distribution: "oracle"
           java-version: "20"
-      
+
       - name: Run Javac
         run: |
           find -name "*.java" > sources.txt
           javac @sources.txt
-          rm sources.txt      
+          rm sources.txt
