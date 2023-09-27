@@ -19,19 +19,9 @@ jobs:
         with:
           distribution: "oracle"
           java-version: "20"
-
-      - name: List Changed Files
-        id: list_changed_files
-        run: |
-          git gc
-          echo "{files}={$(git diff --name-only ${{ github.event.pull_request.base.sha }} )}" >> $GITHUB_OUTPUT
-
+      
       - name: Run Javac
         run: |
-          changed_files="${{ steps.list_changed_files.outputs.files }}"
-
-          if [ -n "$changed_files" ]; then
-          javac -d ./classes $changed_files
-          else
-          echo "No Java files changed."
-          fi
+          find -name "*.java" > sources.txt
+          javac @sources.txt
+          rm sources.txt      
