@@ -22,7 +22,7 @@ jobs:
 
       - name: List Changed Files
         id: list_changed_files
-        run: echo "::set-output name=files::$(git diff --name-only HEAD^)"
+        run: echo "{files}={$(git diff --name-only HEAD^)}" >> $GITHUB_OUTPUT
 
       - name: Run Javac
         run: |
