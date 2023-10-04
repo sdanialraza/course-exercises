@@ -3,6 +3,9 @@ node_modules
 package.json
 pnpm-lock.yaml
 
+# git
+.gitattributes
+
 # java ide
 .idea
 
