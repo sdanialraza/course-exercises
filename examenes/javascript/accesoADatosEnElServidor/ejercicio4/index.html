@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <main>
+        <h1>Benivenid@s a mi API fake!</h1>
+    
+        <hr>
+    
+        <h2>Mi nombre: John</h2>
+        <h2>Mi apellido: Doe</h2>
+        <h2>Mi email: johndoe@gmail.com</h2>
+
+        <hr>
+
+        <h2>El tiempo en Barcelona</h2>
+
+        <h3>Haz clic en el botón para ver el tiempo en Barcelona</h3>
+        <button onclick="getData()">El tiempo</button>
+        <div></div>
+    </main>
+    <script>
+    const OPEN_WEATHER_MAP_API_KEY = "ccd9a3560c8c2023e06fe16af13f76ea"
+
+    async function getData() {
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Barcelona,ES&units=metric&APPID=${OPEN_WEATHER_MAP_API_KEY}`)
+
+        const data = await response.json()
+
+        const div = document.querySelector("div")
+
+        div.innerHTML = `
+        <h2>Nubes: ${data.weather[0].description}</p>
+        <h2>Temperatura: ${data.main.temp}° C</p>
+        <h2>Humedad: ${data.main.humidity}%</p>
+        `
+    }
+    </script>
+</body>
+</html>
