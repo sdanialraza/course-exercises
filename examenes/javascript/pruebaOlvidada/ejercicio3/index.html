@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio 3</title>
+	</head>
+	<body>
+		<script>
+			const peliculas = []
+
+			while (true) {
+				const pelicula = prompt("Introduce el nombre de una pelicula")
+
+				if (pelicula === "salir") break
+
+				peliculas.push(pelicula)
+			}
+
+			peliculas.sort()
+
+			console.log(peliculas.join("\n"))
+		</script>
+	</body>
+</html>
