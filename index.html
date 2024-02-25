@@ -1,73 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<style type="text/tailwindcss">
-			@layer components {
-				.link-button {
-					@apply hover:text-pink flex items-center justify-center rounded-lg p-2 text-sm font-bold no-underline transition-colors dark:bg-gray-600 md:text-base;
-				}
-			}
-		</style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/tailwindcss">
+      @layer components {
+        .link-button {
+          @apply hover:text-pink flex items-center justify-center rounded-lg p-2 text-sm font-bold no-underline transition-colors dark:bg-gray-600 md:text-base;
+        }
+      }
+    </style>
 
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script>
-			/** @type {import('tailwindcss').Config} */
-			tailwind.config = {
-				content: ["./**/*.{html,js}"],
-				theme: {
-					extend: {
-						colors: {
-							pink: "#e4717a",
-						},
-					},
-				},
-			}
-		</script>
-		<script defer src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      /** @type {import('tailwindcss').Config} */
+      tailwind.config = {
+        content: ["./**/*.{html,js}"],
+        theme: {
+          extend: {
+            colors: {
+              pink: "#e4717a",
+            },
+          },
+        },
+      };
+    </script>
+    <script defer src="script.js"></script>
 
-		<title>Course Exercises</title>
-	</head>
-	<body class="scroll-smooth bg-[#1b2430] text-center text-[#d3d3d3] antialiased">
-		<main>
-			<h1 class="mx-2 my-4 text-2xl font-bold md:text-4xl">Course Exercises</h1>
-			<h3 class="mx-2 text-base md:text-lg">
-				Below you can find all the exercises and exams I've worked on while doing a course.
-			</h3>
-			<h3 class="m-2 mx-2 text-base md:text-lg">
-				Just a quick note that most if not all of these websites will be in Spanish.
-			</h3>
+    <title>Course Exercises</title>
+  </head>
+  <body class="scroll-smooth bg-[#1b2430] text-center text-[#d3d3d3] antialiased">
+    <main>
+      <h1 class="mx-2 my-4 text-2xl font-bold md:text-4xl">Course Exercises</h1>
+      <h3 class="mx-2 text-base md:text-lg">
+        Below you can find all the exercises and exams I've worked on while doing a course.
+      </h3>
+      <h3 class="m-2 mx-2 text-base md:text-lg">
+        Just a quick note that most if not all of these websites will be in Spanish.
+      </h3>
 
-			<h3 class="my-4 text-2xl font-semibold">Exercise Links</h3>
+      <h3 class="my-4 text-2xl font-semibold">Exercise Links</h3>
 
-			<div class="grid grid-cols-2 gap-2 px-2 text-sm md:grid-cols-3 md:gap-3 md:text-base lg:grid-cols-4">
-				<a class="link-button" href="ejercicios/javascript/sobreMi/index.html">Sobre Mi</a>
-				<a class="link-button" href="ejercicios/javascript/formulario/index.html">Formulario</a>
-				<a class="link-button" href="ejercicios/javascript/sumaString/index.html">Suma String</a>
-				<a class="link-button" href="ejercicios/javascript/diferenciaNumerica/index.html">Diferencia Numérica</a>
-				<a class="link-button" href="ejercicios/javascript/areaCirculo/index.html">Área Círculo</a>
-				<a class="link-button" href="ejercicios/javascript/condicionales/index.html">Condicionales</a>
-				<a class="link-button" href="ejercicios/javascript/diferenciaNumerica2/index.html">Diferencia Numérica 2</a>
-				<a class="link-button" href="ejercicios/javascript/modificacionContenido/index.html"
-					>Modificacion Contenido del DOM</a
-				>
-				<a class="link-button" href="ejercicios/javascript/intercambio/index.html">Intercambio</a>
-				<a class="link-button" href="ejercicios/javascript/funciones/index.html">Funciones con Presentacion</a>
-				<a class="link-button" href="ejercicios/javascript/objetos/index.html">Objetos (CRUD)</a>
-				<a class="link-button" href="ejercicios/javascript/operaciones/index.html">Operaciones</a>
-				<a class="link-button" href="ejercicios/javascript/objetosCoche/index.html">Objetos Concesionario Coches</a>
-			</div>
+      <div class="grid grid-cols-2 gap-2 px-2 text-sm md:grid-cols-3 md:gap-3 md:text-base lg:grid-cols-4">
+        <a class="link-button" href="exercises/javascript/about-me/index.html">About Me</a>
+        <a class="link-button" href="exercises/javascript/form/index.html">Form</a>
+        <a class="link-button" href="exercises/javascript/sum-string/index.html">Sum String</a>
+        <a class="link-button" href="exercises/javascript/numeric-difference/index.html">Numeric Difference</a>
+        <a class="link-button" href="exercises/javascript/circle-area/index.html">Circle Area</a>
+        <a class="link-button" href="exercises/javascript/conditionals/index.html">Conditionals</a>
+        <a class="link-button" href="exercises/javascript/numeric-difference-2/index.html">Numeric Difference 2</a>
+        <a class="link-button" href="exercises/javascript/dom-manipulation/index.html">DOM Manipulation</a>
+        <a class="link-button" href="exercises/javascript/swap/index.html">Swapping Variable Values</a>
+        <a class="link-button" href="exercises/javascript/functions/index.html">Functions</a>
+        <a class="link-button" href="exercises/javascript/objects/index.html">Objects (CRUD)</a>
+        <a class="link-button" href="exercises/javascript/operations/index.html">Operations</a>
+        <a class="link-button" href="exercises/javascript/objects-car/index.html">Objects (Car Dealer)</a>
+      </div>
 
-			<h3 class="my-4 text-2xl font-semibold">Exam Links</h3>
+      <h3 class="my-4 text-2xl font-semibold">Exam Links</h3>
 
-			<div class="grid grid-cols-2 gap-2 px-2 text-sm md:grid-cols-3 md:gap-3 md:text-base lg:grid-cols-4">
-				<a class="link-button" href="examenes/myRobots/index.html">myRobots</a>
-			</div>
-		</main>
-		<hr class="mb-3 mt-6" />
-		<footer>
-			<p>&copy;</p>
-		</footer>
-	</body>
+      <div class="grid grid-cols-2 gap-2 px-2 text-sm md:grid-cols-3 md:gap-3 md:text-base lg:grid-cols-4">
+        <a class="link-button" href="exams/my-robots/index.html">My Robots</a>
+      </div>
+    </main>
+    <hr class="mb-3 mt-6" />
+    <footer>
+      <p>&copy;</p>
+    </footer>
+  </body>
 </html>

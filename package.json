@@ -1,0 +1,10 @@
+{
+  "name": "web-technologies-course",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}

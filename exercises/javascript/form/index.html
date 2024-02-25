@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Formulario</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="imagen"></div>
+      <div class="card">
+        <fieldset>
+          <form action="https://formsubmit.co/bebikayi@mailgolem.com" class="basico" method="POST">
+            <legend>Informacion Basica</legend>
+            <input id="nombre" name="Nombre" type="text" placeholder="Nombre" required />
+            <input id="edad" name="Edad" type="tel" max="100" maxlength="3" placeholder="Edad" required />
+            <input id="email" name="Email" type="email" placeholder="Email" required />
+            <legend>Informacion Adicional</legend>
+            <input id="telefono" name="Telefono" type="tel" maxlength="9" placeholder="Telefono" required />
+            <input id="direccion" name="Direccion" type="text" placeholder="Direccion" required />
+            <input
+              id="codigoPostal"
+              name="Codigo Postal"
+              type="tel"
+              maxlength="7"
+              placeholder="Codigo Postal"
+              required
+            />
+            <input id="ciudad" name="Ciudad" type="text" placeholder="Ciudad" required />
+            <input id="pais" name="Pais" type="text" placeholder="Pais" required />
+            <button id="enviar" type="submit">Enviar</button>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,11 +1,9 @@
-# javascript dependencies
-node_modules
-package.json
-pnpm-lock.yaml
+# compiled java
+out
+ejercicios/java/ejercicios.iml
 
 # java ide
 .idea
 
-# compiled java
-out
-ejercicios/java/ejercicios.iml
+# javascript dependencies
+node_modules
